@@ -1,0 +1,8 @@
+project_token: a69b3f49d299cfa71139406f
+name: wesscoin
+language: python
+entrypoint: main.py
+resources:
+  limits:
+    cpu: 6
+    memory: 2Gi
