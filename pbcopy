@@ -1,0 +1,42 @@
+{
+	name: "trial",
+	description: "this is the description",
+	time_limit: 15days,
+	projects: 1,
+	users: 1
+	tasks: 1,
+	type: prebuilt,
+	support_level: 1,
+	limits: {
+		task: {
+			default: {
+				cpu: 1,
+				memory: 2g
+			},
+			template_default: {
+				cpu: 6,
+				memory: 2g
+			},
+			request: {
+				cpu: 0.2,
+				memory: 1g
+			}
+		},
+		notebook: {
+			request: {
+				cpu: 0.2,
+				memory: 0.5g
+			}
+		},
+		build: {
+			limit: {
+				cpu: 1,
+				memory: 2g
+			},
+			request: {
+				cpu: 0.2,
+				memory: 1g
+			}
+		}
+	}
+}
