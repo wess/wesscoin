@@ -47,6 +47,7 @@ gtrends_json = skafos.engine.query("SELECT * from gtrends WHERE keyword IN ('bit
 print("Validating a single record:", flush=True)
 print(gtrends_json['data'][0], flush=True)
 
+
 # Convert to pandas df
 gtrends = pd.DataFrame.from_records(gtrends_json['data'])    .pivot(index='date', values='interest', columns='keyword')
 
