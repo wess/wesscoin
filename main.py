@@ -4,7 +4,6 @@
 #   Metis Machine curated data, and external 3rd party data.        #
 
 ## Import some needed dependencies
-
 import os
 from datetime import datetime, timedelta
 import pandas as pd
