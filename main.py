@@ -74,7 +74,6 @@ else:
 # Join google trends with quandl coin data
 df = coin_df.join(gtrends, how='left')
 
-
 # ## Prep Inputs for Modeling
 # We want to use a recurrent time-series model, so our data
 # need to be in ascending order by date.
