@@ -13,7 +13,6 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 
-
 # ## Data Prep
 # Specify what data to use from quandl
 # Here we grab bitcoin prices & market data
