@@ -35,6 +35,7 @@ from skafossdk import *
 print('Initializing the SDK connection', flush=True)
 skafos = Skafos()
 
+
 # Query data engine for google keyword trends
 res = skafos.engine.create_view(
     "gtrends", {"keyspace": "google_trends", "table": "crypto"}, 
